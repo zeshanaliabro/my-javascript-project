@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;               /* Add this */
+  flex-direction: column;      /* So elements stack top to bottom */
+  align-items: center;         /* Horizontal center */
+  justify-content: center;     /* Vertical center */
+  padding: 20px;
+}
+.wrapper {
+  width: 100%;
+  max-width: 600px;
+}
+
+.glass-form {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 30px;
+  /* text-align: center; */
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ;
+}
+.glass-form:hover{
+  transform: scale(1.02);
+}
+.glass-form h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  resize: none;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  color: #ddd;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #ffffff30;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ffffff50;
+}
+
+/* To-do result boxes */
+.result {
+  margin-top: 50px;
+  display: flex;
+}
+#result{
+  width: 80%;
+  height: auto;
+  flex-direction: row;
+  display: none;
+  margin-top: 40px;
+  flex-wrap: wrap;
+   transition: transform 0.4s ;
+}
+#result:hover{
+   transform: scale(1.05);
+}
+.result{
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 15px;
+ display: flex;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.todo-box:hover {
+  transform: scale(1.01);
+}
+.todo-box {
+  width: 15%;
+  /* height: auto; */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 15px;
+
+  flex-wrap: wrap;
+  color: #fff;
+  flex-direction: row;
+  /* display: none; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-btn {
+  /* background-color: inherit; */
+  /* overflow: hidden; */
+  margin-top: 10px;
+  background: #ffffff30;
+  color: blue;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 6px;
+  cursor: pointer;
+  font-size: 14px;
+
+}
