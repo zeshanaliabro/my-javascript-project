@@ -43,12 +43,11 @@ function renderTodo(todo) {
   dateN.style.color = "#ccc";
 
   // ❌ DELETE BUTTON
-  const deleteBtn = document.createElement("button") ;
-  deleteBtn.textContent = "❌";
-
-  deleteBtn.style.minWidth =  "50px";
+  const deleteBtn = document.createElement("buttons") ;
+  deleteBtn.textContent = "❌"; 
   deleteBtn.style.marginRight = "10px";
   deleteBtn.style.cursor = "pointer";
+  deleteBtn.style.margin = "10px"
   
   deleteBtn.addEventListener("click", function () {
     todoBox.remove();
@@ -59,9 +58,9 @@ function renderTodo(todo) {
   });
 
   // ✏️ EDIT BUTTON
-  const editBtn = document.createElement("button");
+  const editBtn = document.createElement("buttons");
   // editBtn.style.display = "flex"
-  editBtn.textContent = "✏️";
+  editBtn.textContent = "➕ ";
   editBtn.style.cursor = "pointer";
   editBtn.addEventListener("click", function () {
     const newTitle = prompt("Edit Title:", todo.title);
@@ -95,6 +94,8 @@ function renderTodo(todo) {
 
   if (todo.description.length <= 100) {
     toggleBtn.style.display = "none";
+  }else{
+    toggleBtn.style.display = "block"
   }
 
   toggleBtn.addEventListener("click", function () {

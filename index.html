@@ -9,26 +9,25 @@
   </head>
   <body>
 
-    <div class="wrapper">
-      <form class="glass-form" id="feedBack"> 
-        <h2>Share Your Feedback</h2>
+  <div class="form-container">
+  <form class="feedback-form" id="feedBack">
+    <h2><i class="fa-solid fa-comment-dots"></i> Share Your Feedback</h2>
 
-        <div class="input-group">
-          <label for="title">Title</label>
-          <input type="text" id="title" placeholder="Enter title..." required>
-        </div>
-
-        <div class="input-group">
-          <label for="description">Description</label>
-          <textarea id="description" rows="4" placeholder="Describe in detail..." required></textarea>
-        </div>
-
-        <button type="submit" onclick="task()">Submit</button>  
-      </form>
-
-      <!-- Result / To-do area -->
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" id="title" placeholder="Enter title..." required>
     </div>
-      
+
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea id="description" rows="4" placeholder="Describe in detail..." required></textarea>
+    </div>
+
+    <button type="submit">Submit Feedback</button>
+  </form>
+</div>
+
+
     <div class="result" id="result">
     
     </div>  

@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+background-image: url("https://wallpapers.com/images/hd/yellow-house-and-greenery-best-hd-h5hf3cmcwkls52wo.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+}
+
+.container {
+  /* background: rgb(15, 13, 13); */
+  background-color: inherit;
+  padding: 40px;
+  border: 2px solid lightgray;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group label {
+  position: absolute;
+  left: 12px;
+  top: 14px;
+  background: #fff;
+  padding: 0 4px;
+  color: #888;
+  font-size: 14px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: #667eea;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #667eea;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: #5a67d8;
+}
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+   font-size: 20px;
+}
+
+.login-link a {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}

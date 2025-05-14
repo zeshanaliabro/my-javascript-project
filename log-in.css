@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/08/3d-desktop-photos-download.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    border: 2px solid white;
+    height: 400px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 20px;
+}
+.signup-form{
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+input{
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    /* display: flex; */
+    margin-top:60px ;
+    width: 80%;
+    height: 80%;
+}
+label{
+    margin-top: 40px;
+    position: absolute;
+    left: 70px;
+}
+
+
+button{
+    border-radius: 15px;
+    color: #fff;
+    border: 1px solid blue;
+    background-color: blue;
+margin-top: 30px;
+padding: 8px 150px;
+font-size: 20px;
+}
+.login-link{
+
+    margin-top: 20px;
+}
+.login-link a{
+    color: white;
+}
