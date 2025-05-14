@@ -4,27 +4,21 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     e.preventDefault();
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
+    let users = JSON.parse(localStorage.getItem("users")) || [];
 
 
-    const user = {
-        email: email,
-        password: password,
-    }
+    const validUser = users.find((user) => user.email === email && user.password === password);
+    console.log("validuser", validUser)
 
-    console.log(user);
-    let useremail = localStorage.getItem("email")
-    let userpassword = localStorage.getItem("password")
+    if (validUser) {
 
-    if (email == "" && password == "") {
-        alert("Input Feild is no value")
+        alert("Login Sucessfully")
+        localStorage.setItem("currentuser", JSON.stringify(validUser, null, 2));
+        window.location.href = "http://127.0.0.1:5500/index.html"
+
     } else {
-        if (email == useremail && password == userpassword) {
-            alert(`login Successfull, Hi ${email}`)
-        }
+        alert("Kindly prvide a correct value")
     }
-// console.log();
-
-
 
     document.getElementById("loginForm").reset();
 });
