@@ -7,9 +7,7 @@
 
 body {
   height: 100vh;
-background-image: url("https://wallpapers.com/images/hd/yellow-house-and-greenery-best-hd-h5hf3cmcwkls52wo.jpg");
-background-repeat: no-repeat;
-background-size: cover;
+  background-color: black;
   display: flex;
   justify-content: center;
   color: #fff;
@@ -41,7 +39,7 @@ background-size: cover;
 
 .input-group input {
   width: 100%;
-border-radius: 15px;
+  border-radius: 15px;
   padding: 14px 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -86,7 +84,7 @@ button:hover {
 .login-link {
   text-align: center;
   margin-top: 20px;
-   font-size: 20px;
+  font-size: 20px;
 }
 
 .login-link a {
@@ -95,17 +93,16 @@ button:hover {
   font-weight: 500;
 }
 
-@media (max-width:400px) {
-  
-.container {
-  /* background: rgb(15, 13, 13); */
-  background-color: inherit;
-  padding: 40px;
-  border: none;
-  color: white;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 600px;
-}
+@media (max-width: 400px) {
+  .container {
+    /* background: rgb(15, 13, 13); */
+    background-color: inherit;
+    padding: 40px;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+  }
 }

@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -11,17 +11,17 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-  display: flex;               /* Add this */
-  flex-direction: column;      /* So elements stack top to bottom */
-  align-items: center;         /* Horizontal center */
-  justify-content: center;     /* Vertical center */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
 }
 .form-container {
   border: 2px solid white;
   width: 100%;
   max-width: 500px;
-  background: rgba(255, 255, 255, 0.05);
+  /* background: rgba(255, 255, 255, 0.05); */
   background-color: inherit;
   padding: 35px;
   border-radius: 20px;
@@ -29,6 +29,9 @@ body {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   color: #fff;
   transition: transform 0.4s;
+}
+h2 i {
+  cursor: pointer;
 }
 
 .form-container:hover {
@@ -114,19 +117,19 @@ button:hover {
   margin-top: 50px;
   display: flex;
 }
-#result{
+#result {
   width: 80%;
   height: auto;
   flex-direction: row;
   /* display: none; */
   margin-top: 40px;
   flex-wrap: wrap;
-   transition: transform 0.4s ;
-   border: 2px solid  white;
-   border-radius: 15px;
+  transition: transform 0.4s;
+  border: 2px solid white;
+  border-radius: 15px;
 }
-#result:hover{
-   transform: scale(1.05);
+#result:hover {
+  transform: scale(1.05);
 }
 
 .result {
@@ -137,23 +140,25 @@ button:hover {
 }
 
 .todo-box {
-  width: 20%;
+  /* position: relative; */
+  /* overflow: hidden; */
+  flex-wrap: wrap;
+  width: 16%;
+  height: auto;
   background-color: #f1f1f1;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
-div small{
+div small {
   color: rgb(172, 165, 165);
-  /* flex-wrap: wrap;
-  overflow: hidden; */
 }
-div h3{
+div h3 {
   font-size: 20px;
 }
 
-div p{
+div p {
   font-size: 17px;
   color: #393c3d;
 }
@@ -165,4 +170,15 @@ div p{
   .feedback-form h2 {
     font-size: 20px;
   }
+}
+#sign-up {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+  /* text-decoration: none; */
+}
+
+#sign-up a {
+  /* text-decoration: none; */
+  color: #fff;
 }
