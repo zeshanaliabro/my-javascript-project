@@ -77,17 +77,29 @@ function resulttodo(todo) {
   console.log(editBtn);
 
   editBtn.addEventListener("click", function () {
-    const newTitle = prompt("Edite title", todo.title);
-    const newDesc = prompt("Edite description", todo.description);
+    const newTitle = prompt("Edit title", todo.title);
+    const newDesc = prompt("Edit description", todo.description);
     let todos = JSON.parse(localStorage.getItem("todos")) || [];
 
-    console.log(editBtn);
-
     if (newTitle && newDesc) {
-      todo.newTitle;
-      todo.newDesc;
+      // Find and update the todo in the array
+      const index = todos.findIndex(
+        (item) =>
+          item.title === todo.title &&
+          item.description === todo.description &&
+          item.date === todo.date &&
+          item.email === todo.email
+      );
+      if (index !== -1) {
+        todos[index].title = newTitle;
+        todos[index].description = newDesc;
+        // Update the UI
+        box.innerHTML = `<h3>${newTitle}</h3> <p>${newDesc}</p> <small>${new Date(todo.date).toLocaleDateString()} </small> `;
+        box.appendChild(button);
+        box.appendChild(editBtn);
+      }
+      localStorage.setItem("todos", JSON.stringify(todos));
     }
-    localStorage.setItem("todos", JSON.stringify(todos));
   });
 
   box.appendChild(button);
